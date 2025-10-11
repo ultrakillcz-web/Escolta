@@ -1,0 +1,24 @@
+{
+  "system": {
+    "name": "Escolta Security System",
+    "version": "0.1.0",
+    "log_level": "INFO"
+  },
+  "sensors": {
+    "scan_interval": 5,
+    "auto_activate": true
+  },
+  "alerts": {
+    "enabled": true,
+    "default_severity": "medium"
+  },
+  "notifications": {
+    "email_enabled": false,
+    "sms_enabled": false,
+    "push_enabled": true
+  },
+  "database": {
+    "type": "sqlite",
+    "path": "escolta.db"
+  }
+}
