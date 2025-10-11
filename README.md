@@ -19,26 +19,19 @@ Escota is a Python-based intelligent security monitoring system that provides re
 
 ## Installation
 
-### From Source
+### Quick Install
 
 ```bash
-# Clone the repository
-git clone https://github.com/ultrakillcz-web/Escota.git
-cd Escota
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install the package
 pip install -e .
 ```
 
-### For Development
+For full camera and motion detection features:
 
 ```bash
-# Install development dependencies
-pip install -r requirements-dev.txt
+pip install opencv-python numpy
 ```
+
+See [INSTALLATION.md](docs/INSTALLATION.md) for detailed installation instructions.
 
 ## Quick Start
 
@@ -91,7 +84,69 @@ recording:
 
 ## Usage Examples
 
+### Command Line
+
+```bash
+# Initialize default configuration
+escota config init
+
+# View configuration
+escota config show
+
+# Start monitoring with custom config
+escota monitor --config my_config.yaml
+
+# Process limited number of frames (useful for testing)
+escota monitor --max-frames 100
+```
+
 ### Python API
+
+#### Alert System Example
+
+```python
+from escota.core.alert import AlertSystem
+
+# Initialize alert system with log file
+alert_system = AlertSystem(log_file="logs/alerts.log")
+
+# Create an alert
+alert_system.create_alert(
+    'motion',
+    'Motion detected in Zone A',
+    {'zone': 'A', 'confidence': 0.95}
+)
+
+# Get all alerts
+all_alerts = alert_system.get_alerts()
+
+# Get motion alerts only
+motion_alerts = alert_system.get_alerts(alert_type='motion')
+
+# Get latest 10 alerts
+recent_alerts = alert_system.get_alerts(limit=10)
+```
+
+#### Configuration Example
+
+```python
+from escota.utils.config import load_config, save_config, get_default_config
+
+# Get default configuration
+config = get_default_config()
+
+# Modify configuration
+config['camera']['resolution'] = [1920, 1080]
+config['detection']['threshold'] = 30
+
+# Save configuration
+save_config(config, 'config/my_config.yaml')
+
+# Load configuration
+loaded_config = load_config('config/my_config.yaml')
+```
+
+#### Camera and Motion Detection (requires OpenCV)
 
 ```python
 from escota.core.camera import CameraMonitor
@@ -120,14 +175,17 @@ with camera:
             )
 ```
 
-### Command Line
+### Example Scripts
 
+See the `examples/` directory for complete working examples:
+
+- `alert_example.py` - Alert system demonstration
+- `config_example.py` - Configuration management
+
+Run examples:
 ```bash
-# Start monitoring with custom config
-escota monitor --config my_config.yaml
-
-# Process limited number of frames (useful for testing)
-escota monitor --max-frames 100
+python examples/alert_example.py
+python examples/config_example.py
 ```
 
 ## Development
@@ -188,13 +246,15 @@ Escota/
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Development
+
+See [DEVELOPMENT.md](docs/DEVELOPMENT.md) for development setup and guidelines.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version history and changes.
 
 ## License
 
