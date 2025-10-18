@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "xcodebuild",
+      "type": "shell",
+      "command": "${input:xcodebuildCommand}",
+      "group": "build",
+      "problemMatcher": []
+    }
+    ,
+    {
+      "label": "xcodebuild: example",
+      "type": "shell",
+      "command": "xcodebuild -workspace Sogiza.xcworkspace -scheme Sogiza -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.4' build",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "xcodebuildCommand",
+      "description": "xcodebuild command to build the app (e.g. xcodebuild -workspace Sogiza.xcworkspace -scheme Sogiza -configuration Debug -sdk iphonesimulator build)"
+    }
+  ]
+}
