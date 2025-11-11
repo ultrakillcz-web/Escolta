@@ -1,0 +1,8 @@
+# Git ignore rules
+
+credentials/
+artifacts/*
+!artifacts/apk/
+!artifacts/apk/**
+obsoleto/
+__MACOSX/

@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040F5296217DDADF002012CA /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F5295217DDADF002012CA /* Variables.swift */; };
+		040F529A217DDFFA002012CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F5299217DDFFA002012CA /* LocationManager.swift */; };
+		041D609F2178968F00AA0B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D609E2178968F00AA0B60 /* AppDelegate.swift */; };
+		041D60A42178968F00AA0B60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041D60A22178968F00AA0B60 /* Main.storyboard */; };
+		041D60A62178968F00AA0B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041D60A52178968F00AA0B60 /* Assets.xcassets */; };
+		041D60A92178968F00AA0B60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041D60A72178968F00AA0B60 /* LaunchScreen.storyboard */; };
+		0454A6EA2178985A009ECA17 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6E92178985A009ECA17 /* Constant.swift */; };
+		0454A6F021789872009ECA17 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6EB21789872009ECA17 /* BorderButton.swift */; };
+		0454A6F121789872009ECA17 /* BorderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6EC21789872009ECA17 /* BorderTextView.swift */; };
+		0454A6F221789872009ECA17 /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6ED21789872009ECA17 /* BorderView.swift */; };
+		0454A6F321789872009ECA17 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6EE21789872009ECA17 /* Extention.swift */; };
+		0454A6F421789872009ECA17 /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6EF21789872009ECA17 /* ViewControllerExt.swift */; };
+		0454A6FA21789881009ECA17 /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6F521789881009ECA17 /* CameraHandler.swift */; };
+		0454A6FB21789881009ECA17 /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6F621789881009ECA17 /* CommunicationManager.swift */; };
+		0454A6FC21789881009ECA17 /* InternetUtilClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6F721789881009ECA17 /* InternetUtilClass.swift */; };
+		0454A6FD21789881009ECA17 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6F821789881009ECA17 /* Switcher.swift */; };
+		0454A6FE21789881009ECA17 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A6F921789881009ECA17 /* Utility.swift */; };
+		0454A70421789893009ECA17 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454A70121789893009ECA17 /* MBProgressHUD.m */; };
+		0454A70521789893009ECA17 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454A70321789893009ECA17 /* Reachability.m */; };
+		0454A70721789DBD009ECA17 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A70621789DBD009ECA17 /* LoginVC.swift */; };
+		0454A7092178A504009ECA17 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A7082178A504009ECA17 /* HomeVC.swift */; };
+		0454A70E2178B384009ECA17 /* SairVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A70D2178B384009ECA17 /* SairVC.swift */; };
+		0454A7102178B9ED009ECA17 /* SolicitarEscoltaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A70F2178B9ED009ECA17 /* SolicitarEscoltaVC.swift */; };
+		0454A7122178BA72009ECA17 /* SolicitarEscoltaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A7112178BA72009ECA17 /* SolicitarEscoltaCell.swift */; };
+		046EB7B32183447A0030CF20 /* LogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EB7B22183447A0030CF20 /* LogoutVC.swift */; };
+		F9A349BB778FF41B9AB252D1 /* Pods_Sogiza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA5D59199F18CE9F44F2292 /* Pods_Sogiza.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040F5295217DDADF002012CA /* Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Variables.swift; path = Common/Variables.swift; sourceTree = "<group>"; };
+		040F5299217DDFFA002012CA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Utility/LocationManager.swift; sourceTree = "<group>"; };
+		041D609B2178968F00AA0B60 /* Sogiza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sogiza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041D609E2178968F00AA0B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041D60A32178968F00AA0B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041D60A52178968F00AA0B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041D60A82178968F00AA0B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041D60AA2178968F00AA0B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0445297921A01B950050F369 /* Sogiza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sogiza.entitlements; sourceTree = "<group>"; };
+		0454A6E92178985A009ECA17 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Common/Constant.swift; sourceTree = "<group>"; };
+		0454A6EB21789872009ECA17 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderButton.swift; path = Extension/BorderButton.swift; sourceTree = "<group>"; };
+		0454A6EC21789872009ECA17 /* BorderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderTextView.swift; path = Extension/BorderTextView.swift; sourceTree = "<group>"; };
+		0454A6ED21789872009ECA17 /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorderView.swift; path = Extension/BorderView.swift; sourceTree = "<group>"; };
+		0454A6EE21789872009ECA17 /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extention.swift; path = Extension/Extention.swift; sourceTree = "<group>"; };
+		0454A6EF21789872009ECA17 /* ViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerExt.swift; path = Extension/ViewControllerExt.swift; sourceTree = "<group>"; };
+		0454A6F521789881009ECA17 /* CameraHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraHandler.swift; path = Utility/CameraHandler.swift; sourceTree = "<group>"; };
+		0454A6F621789881009ECA17 /* CommunicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunicationManager.swift; path = Utility/CommunicationManager.swift; sourceTree = "<group>"; };
+		0454A6F721789881009ECA17 /* InternetUtilClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetUtilClass.swift; path = Utility/InternetUtilClass.swift; sourceTree = "<group>"; };
+		0454A6F821789881009ECA17 /* Switcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Switcher.swift; path = Utility/Switcher.swift; sourceTree = "<group>"; };
+		0454A6F921789881009ECA17 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Utility/Utility.swift; sourceTree = "<group>"; };
+		0454A6FF21789892009ECA17 /* Sogiza-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sogiza-Bridging-Header.h"; sourceTree = "<group>"; };
+		0454A70021789893009ECA17 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "Third Party Library/MBProgressHUD.h"; sourceTree = "<group>"; };
+		0454A70121789893009ECA17 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "Third Party Library/MBProgressHUD.m"; sourceTree = "<group>"; };
+		0454A70221789893009ECA17 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "Third Party Library/Reachability.h"; sourceTree = "<group>"; };
+		0454A70321789893009ECA17 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "Third Party Library/Reachability.m"; sourceTree = "<group>"; };
+		0454A70621789DBD009ECA17 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ViewControllers/LoginVC.swift; sourceTree = "<group>"; };
+		0454A7082178A504009ECA17 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ViewControllers/HomeVC.swift; sourceTree = "<group>"; };
+		0454A70A2178AEDF009ECA17 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0454A70D2178B384009ECA17 /* SairVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SairVC.swift; path = "ViewControllers/Pop Ups/SairVC.swift"; sourceTree = "<group>"; };
+		0454A70F2178B9ED009ECA17 /* SolicitarEscoltaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SolicitarEscoltaVC.swift; path = ViewControllers/SolicitarEscoltaVC.swift; sourceTree = "<group>"; };
+		0454A7112178BA72009ECA17 /* SolicitarEscoltaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SolicitarEscoltaCell.swift; path = CustomCells/SolicitarEscoltaCell.swift; sourceTree = "<group>"; };
+		046EB7B22183447A0030CF20 /* LogoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogoutVC.swift; path = ViewControllers/LogoutVC.swift; sourceTree = "<group>"; };
+		099B102AAFF64A7D1D6C62B5 /* Pods-Sogiza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sogiza.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sogiza/Pods-Sogiza.release.xcconfig"; sourceTree = "<group>"; };
+		1472580E11FC56A668B0AB56 /* Pods-Sogiza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sogiza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sogiza/Pods-Sogiza.debug.xcconfig"; sourceTree = "<group>"; };
+		1DA5D59199F18CE9F44F2292 /* Pods_Sogiza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sogiza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041D60982178968F00AA0B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A349BB778FF41B9AB252D1 /* Pods_Sogiza.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041D60922178968F00AA0B60 = {
+			isa = PBXGroup;
+			children = (
+				041D609D2178968F00AA0B60 /* Sogiza */,
+				041D609C2178968F00AA0B60 /* Products */,
+				E1A76F2A3D49C1BD4D10950B /* Pods */,
+				98420D7ABBC51361D8761739 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		041D609C2178968F00AA0B60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041D609B2178968F00AA0B60 /* Sogiza.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041D609D2178968F00AA0B60 /* Sogiza */ = {
+			isa = PBXGroup;
+			children = (
+				0445297921A01B950050F369 /* Sogiza.entitlements */,
+				0454A6E8217897FA009ECA17 /* Extension */,
+				0454A6E7217897F1009ECA17 /* CustomCells */,
+				0454A6E6217897E9009ECA17 /* Common */,
+				0454A6E5217897DC009ECA17 /* Utility */,
+				0454A6E4217897CE009ECA17 /* Third Party Library */,
+				0454A6E3217897C4009ECA17 /* ViewControllers */,
+				0454A6E22178977E009ECA17 /* StoryBoard */,
+				041D609E2178968F00AA0B60 /* AppDelegate.swift */,
+				041D60A52178968F00AA0B60 /* Assets.xcassets */,
+				041D60AA2178968F00AA0B60 /* Info.plist */,
+			);
+			path = Sogiza;
+			sourceTree = "<group>";
+		};
+		0454A6E22178977E009ECA17 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				041D60A22178968F00AA0B60 /* Main.storyboard */,
+				041D60A72178968F00AA0B60 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		0454A6E3217897C4009ECA17 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0454A70C2178B361009ECA17 /* Pop Ups */,
+				0454A70621789DBD009ECA17 /* LoginVC.swift */,
+				0454A7082178A504009ECA17 /* HomeVC.swift */,
+				0454A70F2178B9ED009ECA17 /* SolicitarEscoltaVC.swift */,
+				046EB7B22183447A0030CF20 /* LogoutVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0454A6E4217897CE009ECA17 /* Third Party Library */ = {
+			isa = PBXGroup;
+			children = (
+				0454A70021789893009ECA17 /* MBProgressHUD.h */,
+				0454A70121789893009ECA17 /* MBProgressHUD.m */,
+				0454A70221789893009ECA17 /* Reachability.h */,
+				0454A70321789893009ECA17 /* Reachability.m */,
+				0454A6FF21789892009ECA17 /* Sogiza-Bridging-Header.h */,
+			);
+			name = "Third Party Library";
+			sourceTree = "<group>";
+		};
+		0454A6E5217897DC009ECA17 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0454A6F521789881009ECA17 /* CameraHandler.swift */,
+				0454A6F621789881009ECA17 /* CommunicationManager.swift */,
+				0454A6F721789881009ECA17 /* InternetUtilClass.swift */,
+				0454A6F821789881009ECA17 /* Switcher.swift */,
+				0454A6F921789881009ECA17 /* Utility.swift */,
+				040F5299217DDFFA002012CA /* LocationManager.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		0454A6E6217897E9009ECA17 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0454A6E92178985A009ECA17 /* Constant.swift */,
+				040F5295217DDADF002012CA /* Variables.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		0454A6E7217897F1009ECA17 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				0454A7112178BA72009ECA17 /* SolicitarEscoltaCell.swift */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		0454A6E8217897FA009ECA17 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0454A6EB21789872009ECA17 /* BorderButton.swift */,
+				0454A6EC21789872009ECA17 /* BorderTextView.swift */,
+				0454A6ED21789872009ECA17 /* BorderView.swift */,
+				0454A6EE21789872009ECA17 /* Extention.swift */,
+				0454A6EF21789872009ECA17 /* ViewControllerExt.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		0454A70C2178B361009ECA17 /* Pop Ups */ = {
+			isa = PBXGroup;
+			children = (
+				0454A70D2178B384009ECA17 /* SairVC.swift */,
+			);
+			name = "Pop Ups";
+			sourceTree = "<group>";
+		};
+		98420D7ABBC51361D8761739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0454A70A2178AEDF009ECA17 /* MapKit.framework */,
+				1DA5D59199F18CE9F44F2292 /* Pods_Sogiza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1A76F2A3D49C1BD4D10950B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1472580E11FC56A668B0AB56 /* Pods-Sogiza.debug.xcconfig */,
+				099B102AAFF64A7D1D6C62B5 /* Pods-Sogiza.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041D609A2178968F00AA0B60 /* Sogiza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041D60AD2178968F00AA0B60 /* Build configuration list for PBXNativeTarget "Sogiza" */;
+			buildPhases = (
+				BBF8C18884A0E647516AC47D /* [CP] Check Pods Manifest.lock */,
+				041D60972178968F00AA0B60 /* Sources */,
+				041D60982178968F00AA0B60 /* Frameworks */,
+				041D60992178968F00AA0B60 /* Resources */,
+				1113D6F989C12D80028D7D74 /* [CP] Embed Pods Frameworks */,
+				F897D0255CEF1B80DC5A2C93 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sogiza;
+			productName = Sogiza;
+			productReference = 041D609B2178968F00AA0B60 /* Sogiza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041D60932178968F00AA0B60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Technorizen;
+				TargetAttributes = {
+					041D609A2178968F00AA0B60 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = X46GPUV7F8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 041D60962178968F00AA0B60 /* Build configuration list for PBXProject "Sogiza" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041D60922178968F00AA0B60;
+			productRefGroup = 041D609C2178968F00AA0B60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041D609A2178968F00AA0B60 /* Sogiza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041D60992178968F00AA0B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041D60A92178968F00AA0B60 /* LaunchScreen.storyboard in Resources */,
+				041D60A62178968F00AA0B60 /* Assets.xcassets in Resources */,
+				041D60A42178968F00AA0B60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1113D6F989C12D80028D7D74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sogiza/Pods-Sogiza-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/InputMask/InputMask.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sogiza/Pods-Sogiza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBF8C18884A0E647516AC47D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sogiza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F897D0255CEF1B80DC5A2C93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sogiza/Pods-Sogiza-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sogiza/Pods-Sogiza-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041D60972178968F00AA0B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041D609F2178968F00AA0B60 /* AppDelegate.swift in Sources */,
+				0454A6FC21789881009ECA17 /* InternetUtilClass.swift in Sources */,
+				0454A6FB21789881009ECA17 /* CommunicationManager.swift in Sources */,
+				0454A7122178BA72009ECA17 /* SolicitarEscoltaCell.swift in Sources */,
+				0454A6F121789872009ECA17 /* BorderTextView.swift in Sources */,
+				0454A6EA2178985A009ECA17 /* Constant.swift in Sources */,
+				0454A6F221789872009ECA17 /* BorderView.swift in Sources */,
+				0454A6F421789872009ECA17 /* ViewControllerExt.swift in Sources */,
+				046EB7B32183447A0030CF20 /* LogoutVC.swift in Sources */,
+				0454A6FA21789881009ECA17 /* CameraHandler.swift in Sources */,
+				0454A6FE21789881009ECA17 /* Utility.swift in Sources */,
+				0454A7092178A504009ECA17 /* HomeVC.swift in Sources */,
+				0454A70421789893009ECA17 /* MBProgressHUD.m in Sources */,
+				0454A70521789893009ECA17 /* Reachability.m in Sources */,
+				0454A6F321789872009ECA17 /* Extention.swift in Sources */,
+				0454A7102178B9ED009ECA17 /* SolicitarEscoltaVC.swift in Sources */,
+				0454A6F021789872009ECA17 /* BorderButton.swift in Sources */,
+				0454A6FD21789881009ECA17 /* Switcher.swift in Sources */,
+				040F529A217DDFFA002012CA /* LocationManager.swift in Sources */,
+				0454A70721789DBD009ECA17 /* LoginVC.swift in Sources */,
+				0454A70E2178B384009ECA17 /* SairVC.swift in Sources */,
+				040F5296217DDADF002012CA /* Variables.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		041D60A22178968F00AA0B60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041D60A32178968F00AA0B60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041D60A72178968F00AA0B60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041D60A82178968F00AA0B60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041D60AB2178968F00AA0B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041D60AC2178968F00AA0B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041D60AE2178968F00AA0B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1472580E11FC56A668B0AB56 /* Pods-Sogiza.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sogiza/Sogiza.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X46GPUV7F8;
+				INFOPLIST_FILE = Sogiza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Sogiza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sogiza/Sogiza-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		041D60AF2178968F00AA0B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 099B102AAFF64A7D1D6C62B5 /* Pods-Sogiza.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sogiza/Sogiza.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X46GPUV7F8;
+				INFOPLIST_FILE = Sogiza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Sogiza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sogiza/Sogiza-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041D60962178968F00AA0B60 /* Build configuration list for PBXProject "Sogiza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041D60AB2178968F00AA0B60 /* Debug */,
+				041D60AC2178968F00AA0B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041D60AD2178968F00AA0B60 /* Build configuration list for PBXNativeTarget "Sogiza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041D60AE2178968F00AA0B60 /* Debug */,
+				041D60AF2178968F00AA0B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041D60932178968F00AA0B60 /* Project object */;
+}
