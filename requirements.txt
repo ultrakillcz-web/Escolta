@@ -1,0 +1,29 @@
+# Escolta - Sistema de Segurança Privada Inteligente
+# Requirements file for production dependencies
+
+# Core dependencies
+python-dateutil>=2.8.0
+
+# Optional dependencies for full functionality
+# Uncomment as needed based on deployment requirements
+
+# Web framework (for API server)
+# flask>=2.3.0
+# fastapi>=0.104.0
+# uvicorn>=0.24.0
+
+# Database
+# sqlalchemy>=2.0.0
+# sqlite3 (included in Python standard library)
+
+# Notifications
+# sendgrid>=6.10.0  # for email
+# twilio>=8.10.0    # for SMS
+
+# Computer Vision (for camera analysis)
+# opencv-python>=4.8.0
+# numpy>=1.24.0
+
+# Testing (development only)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
