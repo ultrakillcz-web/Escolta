@@ -6,9 +6,7 @@ This example demonstrates the alert system without requiring camera hardware.
 """
 
 from escota.core.alert import AlertSystem
-from escota.utils.config import get_default_config, save_config
 import time
-from datetime import datetime
 
 
 def main():

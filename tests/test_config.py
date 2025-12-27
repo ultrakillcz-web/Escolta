@@ -2,8 +2,6 @@
 Tests for configuration utilities
 """
 
-import pytest
-from pathlib import Path
 from escota.utils.config import load_config, save_config, get_default_config
 
 

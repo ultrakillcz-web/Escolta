@@ -2,9 +2,7 @@
 Tests for alert system module
 """
 
-import pytest
 import json
-from pathlib import Path
 from escota.core.alert import AlertSystem
 
 

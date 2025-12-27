@@ -248,10 +248,6 @@ Escota/
 
 Contributions are welcome! Please feel free to submit a Pull Request. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## Development
-
-See [DEVELOPMENT.md](docs/DEVELOPMENT.md) for development setup and guidelines.
-
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and changes.

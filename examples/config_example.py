@@ -7,7 +7,6 @@ This example demonstrates how to work with configuration files.
 
 from escota.utils.config import get_default_config, save_config, load_config
 import yaml
-import os
 
 
 def main():

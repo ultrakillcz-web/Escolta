@@ -4,7 +4,7 @@ Command-line interface for Escota security system
 
 import argparse
 import sys
-from pathlib import Path
+import yaml
 from escota.core.camera import CameraMonitor
 from escota.core.detector import MotionDetector
 from escota.core.alert import AlertSystem
@@ -89,8 +89,6 @@ def config_command(args):
             config = load_config(args.config)
         else:
             config = get_default_config()
-
-        import yaml
 
         print(yaml.dump(config, default_flow_style=False))
         return 0

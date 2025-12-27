@@ -11,7 +11,6 @@ except ImportError:
     HAS_OPENCV = False
 
 from typing import Optional, Tuple
-from datetime import datetime
 
 
 class CameraMonitor:
