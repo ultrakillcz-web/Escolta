@@ -58,4 +58,14 @@ def get_default_config() -> Dict[str, Any]:
         "detection": {"threshold": 25, "min_area": 500, "enabled": True},
         "alerts": {"log_file": "logs/alerts.log", "enabled": True},
         "recording": {"enabled": False, "output_dir": "recordings", "format": "mp4"},
+        "database": {"enabled": False, "db_path": "escota_alerts.db"},
+        "email": {
+            "enabled": False,
+            "smtp_server": "smtp.gmail.com",
+            "smtp_port": 587,
+            "sender_email": "",
+            "sender_password": "",
+            "recipients": [],
+        },
+        "webui": {"enabled": False, "host": "localhost", "port": 8080},
     }

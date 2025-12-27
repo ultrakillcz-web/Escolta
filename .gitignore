@@ -210,3 +210,6 @@ __marimo__/
 logs/
 config/custom_config.yaml
 *.log
+*.db
+*.sqlite
+*.sqlite3

@@ -13,6 +13,9 @@ Escota is a Python-based intelligent security monitoring system that provides re
 - 📹 **Camera Monitoring**: Real-time video capture from webcams or IP cameras
 - 🔍 **Motion Detection**: Intelligent motion detection with configurable sensitivity
 - 🚨 **Alert System**: Comprehensive alert logging and notification system
+- 📧 **Email Notifications**: Send security alerts via email
+- 💾 **Database Storage**: SQLite database for persistent alert storage
+- 🌐 **Web Interface**: Browser-based dashboard for monitoring alerts
 - ⚙️ **Configurable**: YAML-based configuration for easy customization
 - 🧪 **Well-Tested**: Comprehensive test suite with pytest
 - 🐍 **Modern Python**: Built with Python 3.8+ using type hints
@@ -175,12 +178,79 @@ with camera:
             )
 ```
 
+#### Database Storage
+
+```python
+from escota.core.alert import AlertSystem
+from escota.core.database import AlertDatabase
+
+# Initialize database
+db = AlertDatabase("escota_alerts.db")
+alert_system = AlertSystem()
+
+# Create and save alert
+alert = alert_system.create_alert('motion', 'Motion detected', {'zone': 'A'})
+alert_id = db.save_alert(alert)
+
+# Retrieve alerts
+all_alerts = db.get_alerts()
+motion_alerts = db.get_alerts(alert_type='motion', limit=10)
+
+# Get statistics
+total_count = db.get_alert_count()
+motion_count = db.get_alert_count('motion')
+```
+
+#### Email Notifications
+
+```python
+from escota.core.notifier import EmailNotifier
+from escota.core.alert import AlertSystem
+
+# Initialize email notifier
+notifier = EmailNotifier(
+    smtp_server='smtp.gmail.com',
+    smtp_port=587,
+    sender_email='your-email@gmail.com',
+    sender_password='your-app-password',
+    recipient_emails=['recipient@example.com']
+)
+
+# Send alert notification
+alert_system = AlertSystem()
+alert = alert_system.create_alert('intrusion', 'Security breach!')
+notifier.send_alert(alert)
+```
+
+#### Web Interface
+
+```python
+from escota.core.webui import WebInterface
+from escota.core.database import AlertDatabase
+
+# Initialize web interface with database
+db = AlertDatabase("escota_alerts.db")
+webui = WebInterface(database=db, host='localhost', port=8080)
+
+# Start web server
+webui.start()
+
+# Access at http://localhost:8080
+# The web interface shows:
+#   - Real-time alert statistics
+#   - Recent alerts table
+#   - Auto-refresh every 5 seconds
+```
+
 ### Example Scripts
 
 See the `examples/` directory for complete working examples:
 
 - `alert_example.py` - Alert system demonstration
 - `config_example.py` - Configuration management
+- `database_example.py` - Database storage for alerts
+- `email_example.py` - Email notification setup
+- `webui_example.py` - Web interface demonstration
 
 Run examples:
 ```bash

@@ -18,3 +18,21 @@ recording:
   enabled: false
   output_dir: recordings
   format: mp4
+
+database:
+  enabled: false
+  db_path: escota_alerts.db
+
+email:
+  enabled: false
+  smtp_server: smtp.gmail.com
+  smtp_port: 587
+  sender_email: ''
+  sender_password: ''
+  recipients: []
+
+webui:
+  enabled: false
+  host: localhost
+  port: 8080
+
